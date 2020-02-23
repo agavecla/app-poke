@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 // Serve os arquivos estáticos da pasta dist (gerada pelo ng build)
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/'));
 
 // Inicia a aplicação pela porta configurada
 app.listen(process.env.PORT || 8080);
